@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q4 C.</title>
+</head>
+<body>
+	<input type="button" value="click me" onClick="display()">
+
+	<form name="exam" style="display: none;">
+		<div><label for="first">First Name:</label></div>
+		<input type="text" name="first" onfocus="hightlightyellow()">
+
+		<div><label for="last">Last Name:</label></div>
+		<input type="text" name="last" onfocus="hightlightyellow2()">
+
+	</form>
+
+	<script type="text/javascript">
+
+		function display(){
+
+			document.exam.style.display = 'block';			
+		}
+
+		function hightlightyellow(){
+			document.exam.first.style.background = "yellow";
+		}
+
+		function hightlightyellow2(){
+			document.exam.last.style.background = "yellow";
+		}
+
+		
+	</script>
+
+</body>
+</html>
